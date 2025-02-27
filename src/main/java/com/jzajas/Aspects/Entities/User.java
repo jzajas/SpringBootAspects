@@ -1,4 +1,4 @@
-package com.jzajas.Aspects.Models;
+package com.jzajas.Aspects.Entities;
 
 import java.util.UUID;
 
@@ -9,8 +9,8 @@ public class User {
     private String password;
 
 
-    public User(UUID ID, String name, String password) {
-        this.ID = ID;
+    public User(String name, String password) {
+        this.ID = UUID.randomUUID();
         this.name = name;
         this.password = password;
     }

@@ -16,8 +16,8 @@ public class TimeLoggerAspect {
         Object proceed = joinPoint.proceed();
 
         long executionTime = System.currentTimeMillis() - start;
-        System.out.println(joinPoint.getSignature() + " executed in " + executionTime + "ms");
+        System.out.println(joinPoint.getSignature() + " completed in " + executionTime + "ms");
 
-        return joinPoint.proceed();
+        return proceed;
     }
 }

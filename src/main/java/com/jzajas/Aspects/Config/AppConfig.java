@@ -1,4 +1,4 @@
-package com.jzajas.Aspects;
+package com.jzajas.Aspects.Config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
